@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>KEDIT 1.13 사용 설명서</title>
+  <title>KEDIT 1.14 사용 설명서</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -41,8 +41,8 @@
   </style>
 </head>
 <body>
-<h1 id="kedit-113-사용-설명서">KEDIT 1.13 사용 설명서</h1>
-<p>이 설명서는 <strong>KEDIT 1.13</strong>의 설명서입니다. 편집기를 켜면 맨 아랫줄 처음 메시지에 같은 판 번호(<code>KEDIT 1.13</code>)가 나옵니다. 판이 다르면 설명이 다를 수 있습니다.</p>
+<h1 id="kedit-114-사용-설명서">KEDIT 1.14 사용 설명서</h1>
+<p>이 설명서는 <strong>KEDIT 1.14</strong>의 설명서입니다. 편집기를 켜면 맨 아랫줄 처음 메시지에 같은 판 번호(<code>KEDIT 1.14</code>)가 나옵니다. 판이 다르면 설명이 다를 수 있습니다.</p>
 <p>KEDIT는 애플 II 플러스에서 한글과 영문을 함께 쓰는 전체 화면 글 편집기입니다. K-HANGEUL 한글 드라이버 위에서 돌아가며, 전부 6502 어셈블리로 만들었습니다. BASIC이나 K-BASIC은 필요 없습니다.</p>
 <p>키는 바꿀 수 있습니다: 시작할 때 디스크의 <code>KEYS</code> 파일을 읽고, Applesoft 프로그램 <code>KEYCFG</code>로 <code>KEYS</code>를 고칩니다 (12장). 디스크에 들어 있는 <code>KEYS</code>는 5장의 키입니다.</p>
 <h2 id="1-필요한-것">1. 필요한 것</h2>
@@ -83,7 +83,7 @@
 <li><strong>끝:</strong> <code>ESC</code>를 누르고 <code>Q</code>(또는 <code>끝</code>)를 친 다음 <code>RETURN</code>. <code>]</code> 프롬프트로 돌아갑니다.</li>
 <li>KEDIT는 BASIC 프로그램이 쓰는 메모리를 씁니다. 메모리에 있던 BASIC 프로그램은 없어집니다.</li>
 </ul>
-<p>편집기가 뜨면 화면은 비어 있고, 왼쪽 위에 커서가 있으며, 맨 아랫줄에 <code>KEDIT 1.13 ESC: 명령</code>이 보입니다. <code>KEYS</code> 파일이 없거나 잘못되었으면 대신 <code>KEYS 파일이 없거나 잘못되어 기본 키를 씁니다</code>가 나오고 5장의 키를 씁니다.</p>
+<p>편집기가 뜨면 화면은 비어 있고, 왼쪽 위에 커서가 있으며, 맨 아랫줄에 <code>KEDIT 1.14 ESC: 명령</code>이 보입니다. <code>KEYS</code> 파일이 없거나 잘못되었으면 대신 <code>KEYS 파일이 없거나 잘못되어 기본 키를 씁니다</code>가 나오고 5장의 키를 씁니다.</p>
 <h2 id="3-화면">3. 화면</h2>
 <pre><code>0-14줄   글 (한 줄 46칸. 영문 1칸, 한글 한 글자 2칸)
 15줄     영 ABC 줄 12/39 칸 7 여유 7312 * DIARY      (반전된 상태 줄)
@@ -641,7 +641,7 @@ acx -p KEDIT.dsk MEMO TXT 0 &lt; memo.nb
 <td>찾는 낱말이 없습니다</td>
 </tr>
 <tr class="even">
-<td><code>모르는 명령입니다</code></td>
+<td><code>모르는 명령어입니다</code></td>
 <td>명령 이름이 틀렸습니다</td>
 </tr>
 <tr class="odd">
@@ -689,6 +689,10 @@ acx -p KEDIT.dsk MEMO TXT 0 &lt; memo.nb
 <li><code>←</code>는 모든 기종에서 커서를 왼쪽으로 옮깁니다. 전에는 II Plus에서 앞 글자를 지웠습니다.</li>
 <li>II 플러스에서 Shift 키 개조가 있으면 Shift+<code>←</code>가 앞 글자를 지웁니다. IIe에서는 <code>←</code>가 그냥 왼쪽으로 옮깁니다.</li>
 <li>글의 크기 한계가 6,992바이트에서 6,983바이트로 줄었습니다 (코드 9바이트 늘었습니다).</li>
+</ul>
+<p><strong>1.14 (2026-11-15)</strong></p>
+<ul>
+<li>명령 줄(ESC)의 메시지 <code>모르는 명령입니다</code>가 <code>모르는 명령어입니다</code>로 바뀌었습니다. 한글 명령(<code>찾기</code>, <code>줄</code>, <code>번호</code>, <code>복사</code>, <code>붙임</code>, <code>지움</code>, <code>문단지움</code>, <code>모두지움</code>, <code>정보</code> 등)은 전과 같이 칩니다. 바뀐 것은 메시지뿐입니다.</li>
 </ul>
 <p><strong>1.13 (2026-11-15)</strong></p>
 <ul>
