@@ -1,0 +1,5 @@
+10 출력 문자(4);"BRUN SPLAY"
+20 # 스피커로 곡을 연주합니다. 음표 문자열은 & MPLAY 와 같은 형식입니다
+30 비움: 출력 "반짝반짝 작은 별"
+40 & SPLAY "T140 O4 L4 CCGGAAG2 FFEEDDC2 GGFFEED2 GGFFEED2 CCGGAAG2 FFEEDDC2"
+50 출력 "끝! (연주 중 아무 키나 누르면 멈춥니다)"
