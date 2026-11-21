@@ -256,7 +256,7 @@ BRUN KBASIC          드라이버 다음에 (TYPE / STYPE와 함께 쓸 수 없�
 -   받침으로 끝나는 한글 낱말 바로 뒤에 모음이 오면 두벌식 자판에서는 두 가지로
     읽힐 수 있습니다. 드라이버와 KBASIC은 같은 방식으로 읽습니다.
 
--   **한글 오류 메시지와 한글 DOS 명령은 K-HANGEUL 드라이버(v1.9 이상)가 합니다.** KBASIC이 하는 일은
+-   **한글 오류 메시지와 한글 DOS 명령은 K-HANGEUL 드라이버(v1.10 이상)가 합니다.** KBASIC이 하는 일은
     아닙니다. 표는 [REFERENCE.txt](REFERENCE.txt)에 있습니다.
     -   애플소프트 오류는 `?GOSUB 없음 오류`, `?0으로 나눔 오류`, 프로그램 안에서는 `?줄없음 오류 줄 10`
         처럼 나옵니다. `BREAK IN 10`은 `중단 줄 10`, `INPUT`의 `?EXTRA IGNORED`와 `?REENTER`는
